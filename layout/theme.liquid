@@ -237,12 +237,12 @@
         {%- endif -%}
       </div>
     {%- endif -%}
-  <!-- PF EDT START -->
+  
+<!-- PF EDT START -->
 <script type='text/javascript'>
 {%- if content_for_header contains 'shopify-product-customizer' -%}
     {%- if product -%}
         {%- if product.first_available_variant -%}
-            var pfSyncProductIdentity = {{ product.id | json}};
             var pfProductId = {{ product.metafields.printful.is_synced | json }};
             var pfEdt = {{ shop.metafields.printful.is_edt_enabled | json }};
             var pfEdtTextColor = {{ shop.metafields.printful.edt_text_color | json }};
